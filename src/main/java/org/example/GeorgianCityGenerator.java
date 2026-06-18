@@ -32,8 +32,8 @@ public class GeorgianCityGenerator {
     }
 
 
-    public static String getRandomCity(List citiesad){
-        String randomCity=citiesad.get(new Random().nextInt(citiesad.size())).toString();
+    public static String getRandomCity(List cities){
+        String randomCity=cities.get(new Random().nextInt(cities.size())).toString();
         return randomCity;
 
     }
