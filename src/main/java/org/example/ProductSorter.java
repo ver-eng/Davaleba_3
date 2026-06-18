@@ -13,7 +13,9 @@ public class ProductSorter {
     }
     @Override
     public String toString() {
-        return "Title: " + title + ", Price: " + price;
+//        return "Title: " + title + ", Price: " + price;
+        return  title + " - " + price+" ₾";
+
     }
     public static void main(String[] args) {
 
@@ -25,6 +27,10 @@ public class ProductSorter {
         products.add(new ProductSorter("ყავა", 39));
         products.add(new ProductSorter("პური", 0.99));
         products.add(new ProductSorter("სდფსფსც", 12.99));
+        products.add(new ProductSorter("უირეჰტ", 200));
+        products.add(new ProductSorter("წერწსც", 0));
+
+
 
 
         products.sort((a,b)->Double.compare(a.price, b.price));
